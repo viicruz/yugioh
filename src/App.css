@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #000c2e;
+}
+
+.deckHolder {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.deck {
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.spanDeck {
+  color: white;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.previewHolder {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spanPreview {
+  color: white;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.preview {
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.infoText {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.inputHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchCardInput {
+  border-radius: 5px;
+  border: 3px solid white;
+  width: 250px;
+  height: 25px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  outline: none;
+}
+
+.cardButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.cardButtons > button {
+  margin-left: 10px;
+}
+
+.plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0);
+  position: relative;
+  transition: all 0.7s ease;
+}
+.plus:hover {
+  transform: rotate(180deg);
+}
+
+.horizontal {
+  width: 30px;
+  height: 8px;
+  background: white;
+  position: absolute;
+  border-radius: 8px;
+}
+
+.vertical {
+  width: 8px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  border-radius: 8px;
+}
+
+.minum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-animation: none;
+          animation: none;
+}
+.minum:hover {
+  -webkit-animation: shaking 0.9s ease infinite forwards;
+          animation: shaking 0.9s ease infinite forwards;
+}
+
+@-webkit-keyframes shaking {
+  0% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(-8px);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  80% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes shaking {
+  0% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(-8px);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  80% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}/*# sourceMappingURL=App.css.map */
